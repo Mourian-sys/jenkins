@@ -8,12 +8,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Mourian-sys/jenkins.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'mvn clean compile'
